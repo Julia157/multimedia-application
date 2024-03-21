@@ -1,0 +1,140 @@
+body {
+  justify-content: center;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  margin: 0%;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+#canvas {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+#startBtn {
+  background-color: #d7b1e3;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 2px solid rebeccapurple;
+  text-align: center;
+  padding: 15px 30px 15px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#startBtn:hover {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.text p {
+  background-color: white;
+  padding: 3px 7px;
+  border-radius: 25px;
+  color: black;
+  font-size: 25px;
+  margin: 0;
+  position: relative;
+  bottom: 120px;
+  text-align: center;
+}
+
+.Audio {
+  position: absolute;
+  bottom: 60px;
+  left: calc(50% - 150px);
+  width: 300px;
+  right: calc(50% - 150px);
+}
+
+#logo {
+  width: 500px;
+  min-height: 500px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

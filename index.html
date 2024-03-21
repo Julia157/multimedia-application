@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <button id="startBtn">START</button>
+    <div class="slideshow-container" style="display: none;">
+      <div class="mySlides fade">
+        <img src="image1.jpg" style="width: 100%" alt="">
+        <div  class="text"><p>Waterfalls</p></div>
+        <audio class="Audio" controls>
+          <source src="Arcade.mp3">
+        </audio>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="image2.jpg" style="width: 100%" alt="">
+        <div  class="text"><p>Sunset</p></div>
+        <audio class="Audio" controls>
+          <source src="Alliwant.mp3">
+        </audio>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="image3.jpg" style="width: 100%" alt="">
+        <div  class="text"><p>Lake</p></div>
+        <audio class="Audio" controls>
+          <source src="Found.mp3">
+        </audio>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+      <a class="next" onclick="plusSlides(1)">&#10095</a>
+    </div>
+    <br>
+
+    <div style="text-align: center; display: none;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
